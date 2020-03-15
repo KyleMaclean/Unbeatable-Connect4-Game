@@ -1,4 +1,4 @@
-# ubeatable-connect-4
+# Unbeatable Connect 4
 
 This script allows a human to play interactively against an AI which uses the minimax algorithm to determine its next move.
 
