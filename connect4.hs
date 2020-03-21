@@ -5,7 +5,7 @@ import Data.Ord
 rows = 6
 cols = 7
 win = 4
-depth = 6
+depth = 4
 
 type Board = [Row]
 type Row = [Player]
@@ -70,6 +70,7 @@ dependentOrdering :: Player -> (Player, Int) -> (Player, Int) -> Ordering
 dependentOrdering p (p1, rd1) (p2, rd2) = compare p1 p2 <> case (p, p1) of
                                                                 (_, O) -> compare rd1 rd2
                                                                 (_, X) -> compare rd2 rd1
+                                                                (_, B) -> EQ
 
 whosePly :: Board -> Player
 whosePly b = if os <= xs then O else X

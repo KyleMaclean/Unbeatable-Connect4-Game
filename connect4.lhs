@@ -7,7 +7,7 @@ PARAMETERS
 > rows = 6
 > cols = 7
 > win = 4
-> depth = 6
+> depth = 4
 
 DEFINITIONS
 
